@@ -355,16 +355,216 @@
         </section>
 
         <!-- 问题背景分析 -->
-        <section id="problem-background" class="section" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
+        <section id="problem-background" class="section"
+            style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
             <div class="container">
                 <h2 style="color: white; text-align: center; margin-bottom: 3rem;">问题背景与技术挑战</h2>
-                
+
+                <!-- 问题产生的根源分析 -->
+                <div style="margin-bottom: 4rem;">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: white;">问题产生的根源分析</h3>
+                    
+                    <div style="background: rgba(255,255,255,0.1); padding: 3rem; border-radius: 15px; backdrop-filter: blur(10px); margin-bottom: 2rem;">
+                        <h4 style="color: #ffeb3b; margin-bottom: 2rem; text-align: center;">🔍 深层次技术根源</h4>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+                            <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 10px;">
+                                <h5 style="color: #fff; margin-bottom: 1rem;">📐 理论基础缺陷</h5>
+                                <div style="font-size: 0.9rem; line-height: 1.7;">
+                                    <p><strong>根源1：传统调度理论的局限性</strong></p>
+                                    <p>• 经典调度理论基于<strong>单机环境假设</strong>，无法适应分布式多智能体环境的复杂性</p>
+                                    <p>• 传统算法设计基于<strong>静态优化思想</strong>，缺乏对动态环境变化的适应能力</p>
+                                    <p>• 现有理论框架缺乏对<strong>智能体异构性</strong>的系统性建模和处理机制</p>
+                                    
+                                    <p style="margin-top: 1rem;"><strong>根源2：数学模型的不完备性</strong></p>
+                                    <p>• 传统负载模型过于简化，无法准确描述<strong>多维度负载特征</strong>的复杂关系</p>
+                                    <p>• 缺乏对任务依赖关系的<strong>动态建模</strong>，无法处理运行时依赖变化</p>
+                                    <p>• 故障模型单一，无法涵盖<strong>多层次、多类型</strong>的故障场景</p>
+                                </div>
+                            </div>
+                            
+                            <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 10px;">
+                                <h5 style="color: #fff; margin-bottom: 1rem;">🏗️ 架构设计缺陷</h5>
+                                <div style="font-size: 0.9rem; line-height: 1.7;">
+                                    <p><strong>根源3：系统架构的固有限制</strong></p>
+                                    <p>• 传统<strong>集中式架构</strong>存在单点故障风险，无法满足高可用性要求</p>
+                                    <p>• <strong>分层设计不合理</strong>，导致调度决策链路过长，响应时间无法满足实时性要求</p>
+                                    <p>• 缺乏<strong>自适应架构</strong>，无法根据系统规模和负载动态调整架构参数</p>
+                                    
+                                    <p style="margin-top: 1rem;"><strong>根源4：数据流设计问题</strong></p>
+                                    <p>• 传统系统的<strong>数据流设计</strong>无法支持实时的多维度数据融合</p>
+                                    <p>• 缺乏<strong>统一的数据模型</strong>，导致不同组件间数据交换效率低下</p>
+                                    <p>• <strong>数据一致性保障机制</strong>不完善，影响调度决策的准确性</p>
+                                </div>
+                            </div>
+                            
+                            <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 10px;">
+                                <h5 style="color: #fff; margin-bottom: 1rem;">🧠 算法设计缺陷</h5>
+                                <div style="font-size: 0.9rem; line-height: 1.7;">
+                                    <p><strong>根源5：算法复杂度与实用性矛盾</strong></p>
+                                    <p>• 理论最优算法的<strong>时间复杂度过高</strong>（如O(n!)），无法在实际系统中应用</p>
+                                    <p>• 启发式算法缺乏<strong>理论保证</strong>，在复杂场景下性能不稳定</p>
+                                    <p>• 缺乏<strong>在线学习能力</strong>，无法根据历史数据优化调度策略</p>
+                                    
+                                    <p style="margin-top: 1rem;"><strong>根源6：多目标优化的技术瓶颈</strong></p>
+                                    <p>• 传统多目标优化方法存在<strong>权重设置困难</strong>的问题</p>
+                                    <p>• 缺乏<strong>动态权重调整</strong>机制，无法适应不同场景的优化需求</p>
+                                    <p>• <strong>帕累托最优解</strong>的选择缺乏智能化决策支持</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 现有技术存在的核心技术问题 -->
+                <div style="margin-bottom: 4rem;">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: white;">现有技术存在的核心技术问题</h3>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+                        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
+                            <h4 style="color: #ff5722; margin-bottom: 1.5rem; text-align: center;">⚠️ 关键技术问题清单</h4>
+                            
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                                <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 10px;">
+                                    <h5 style="color: #ffeb3b; margin-bottom: 1rem;">问题1：负载评估不准确</h5>
+                                    <div style="font-size: 0.9rem; line-height: 1.6;">
+                                        <p><strong>技术问题：</strong>现有系统仅基于CPU、内存等单一指标评估负载</p>
+                                        <p><strong>具体表现：</strong></p>
+                                        <p>• 无法识别I/O密集型任务的真实负载</p>
+                                        <p>• 忽略网络延迟对分布式任务的影响</p>
+                                        <p>• 缺乏对智能体专业能力的量化评估</p>
+                                        <p><strong>后果：</strong>调度决策偏差率高达40%，资源利用率低</p>
+                                    </div>
+                                </div>
+                                
+                                <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 10px;">
+                                    <h5 style="color: #ffeb3b; margin-bottom: 1rem;">问题2：任务依赖处理简陋</h5>
+                                    <div style="font-size: 0.9rem; line-height: 1.6;">
+                                        <p><strong>技术问题：</strong>传统DAG构建依赖人工配置，无法处理动态依赖</p>
+                                        <p><strong>具体表现：</strong></p>
+                                        <p>• 静态依赖图无法适应运行时变化</p>
+                                        <p>• 循环依赖检测算法效率低下</p>
+                                        <p>• 关键路径分析不够精确</p>
+                                        <p><strong>后果：</strong>任务执行效率降低25%，死锁风险增加</p>
+                                    </div>
+                                </div>
+                                
+                                <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 10px;">
+                                    <h5 style="color: #ffeb3b; margin-bottom: 1rem;">问题3：调度策略缺乏预测性</h5>
+                                    <div style="font-size: 0.9rem; line-height: 1.6;">
+                                        <p><strong>技术问题：</strong>基于当前状态的被动调度，缺乏前瞻性</p>
+                                        <p><strong>具体表现：</strong></p>
+                                        <p>• 无法预测任务执行时间</p>
+                                        <p>• 缺乏负载趋势预测能力</p>
+                                        <p>• 资源预留机制不完善</p>
+                                        <p><strong>后果：</strong>系统响应滞后，资源浪费严重</p>
+                                    </div>
+                                </div>
+                                
+                                <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 10px;">
+                                    <h5 style="color: #ffeb3b; margin-bottom: 1rem;">问题4：故障处理机制原始</h5>
+                                    <div style="font-size: 0.9rem; line-height: 1.6;">
+                                        <p><strong>技术问题：</strong>简单的重试机制，缺乏智能化故障处理</p>
+                                        <p><strong>具体表现：</strong></p>
+                                        <p>• 故障检测延迟高（5-10秒）</p>
+                                        <p>• 恢复策略单一，效率低下</p>
+                                        <p>• 缺乏故障预测和预防能力</p>
+                                        <p><strong>后果：</strong>系统可用性低于95%，业务中断频繁</p>
+                                    </div>
+                                </div>
+                                
+                                <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 10px;">
+                                    <h5 style="color: #ffeb3b; margin-bottom: 1rem;">问题5：扩展性能瓶颈</h5>
+                                    <div style="font-size: 0.9rem; line-height: 1.6;">
+                                        <p><strong>技术问题：</strong>算法复杂度高，无法支持大规模部署</p>
+                                        <p><strong>具体表现：</strong></p>
+                                        <p>• 调度决策时间随规模指数增长</p>
+                                        <p>• 通信开销过大，网络拥塞</p>
+                                        <p>• 内存消耗无法控制</p>
+                                        <p><strong>后果：</strong>系统规模受限，无法满足大型应用需求</p>
+                                    </div>
+                                </div>
+                                
+                                <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 10px;">
+                                    <h5 style="color: #ffeb3b; margin-bottom: 1rem;">问题6：负载均衡效果差</h5>
+                                    <div style="font-size: 0.9rem; line-height: 1.6;">
+                                        <p><strong>技术问题：</strong>静态负载均衡策略，无法适应动态变化</p>
+                                        <p><strong>具体表现：</strong></p>
+                                        <p>• 负载分布不均，部分节点过载</p>
+                                        <p>• 任务迁移成本高，效率低</p>
+                                        <p>• 缺乏全局优化视角</p>
+                                        <p><strong>后果：</strong>资源利用率不均衡，系统整体性能下降</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 解决问题的价值分析 -->
+                <div style="margin-bottom: 4rem;">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: white;">解决这些问题的巨大价值</h3>
+                    
+                    <div style="background: rgba(255,255,255,0.1); padding: 3rem; border-radius: 15px; backdrop-filter: blur(10px);">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                            <div style="text-align: center; padding: 2rem; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                                <div style="font-size: 3rem; margin-bottom: 1rem;">💰</div>
+                                <h4 style="color: #4caf50; margin-bottom: 1rem;">经济价值</h4>
+                                <div style="font-size: 0.9rem; line-height: 1.6;">
+                                    <p><strong>直接经济效益：</strong></p>
+                                    <p>• 提升资源利用率30%，节省硬件成本</p>
+                                    <p>• 减少系统故障70%，降低运维成本</p>
+                                    <p>• 提高生产效率35%，增加营收</p>
+                                    <p><strong>预计年节省成本：</strong>单个大型系统可节省500万元</p>
+                                </div>
+                            </div>
+                            
+                            <div style="text-align: center; padding: 2rem; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                                <div style="font-size: 3rem; margin-bottom: 1rem;">🚀</div>
+                                <h4 style="color: #2196f3; margin-bottom: 1rem;">技术价值</h4>
+                                <div style="font-size: 0.9rem; line-height: 1.6;">
+                                    <p><strong>技术突破意义：</strong></p>
+                                    <p>• 建立多智能体调度理论新框架</p>
+                                    <p>• 实现毫秒级实时调度决策</p>
+                                    <p>• 支持万级智能体协同工作</p>
+                                    <p><strong>技术影响：</strong>推动整个行业技术水平提升</p>
+                                </div>
+                            </div>
+                            
+                            <div style="text-align: center; padding: 2rem; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                                <div style="font-size: 3rem; margin-bottom: 1rem;">🌍</div>
+                                <h4 style="color: #ff9800; margin-bottom: 1rem;">社会价值</h4>
+                                <div style="font-size: 0.9rem; line-height: 1.6;">
+                                    <p><strong>社会效益贡献：</strong></p>
+                                    <p>• 推动智能制造转型升级</p>
+                                    <p>• 提升城市交通运行效率</p>
+                                    <p>• 促进绿色节能减排</p>
+                                    <p><strong>社会影响：</strong>助力数字经济高质量发展</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 10px; text-align: center;">
+                            <h4 style="color: #ffeb3b; margin-bottom: 1rem;">🎯 核心价值主张</h4>
+                            <p style="font-size: 1.2rem; line-height: 1.8; font-weight: 500;">
+                                通过解决现有技术的<strong>6大核心问题</strong>，本发明将实现：<br>
+                                <strong style="color: #4caf50;">调度效率提升40%</strong> + 
+                                <strong style="color: #2196f3;">系统可用性达到99.95%</strong> + 
+                                <strong style="color: #ff9800;">资源利用率提升30%</strong><br>
+                                为多智能体系统的<strong>产业化应用</strong>奠定坚实的技术基础，
+                                推动<strong>人工智能与实体经济</strong>的深度融合。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- 行业发展趋势 -->
                 <div style="margin-bottom: 4rem;">
                     <h3 style="text-align: center; margin-bottom: 2rem; color: white;">行业发展趋势与痛点</h3>
-                    
+
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
+                        <div
+                            style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
                             <div style="font-size: 2.5rem; margin-bottom: 1rem; text-align: center;">📈</div>
                             <h4 style="margin-bottom: 1rem; color: white; text-align: center;">市场规模快速增长</h4>
                             <div style="font-size: 0.9rem; line-height: 1.6;">
@@ -374,8 +574,9 @@
                                 <p>• <strong>技术需求：</strong>对高效任务调度的需求呈指数级增长</p>
                             </div>
                         </div>
-                        
-                        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
+
+                        <div
+                            style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
                             <div style="font-size: 2.5rem; margin-bottom: 1rem; text-align: center;">⚡</div>
                             <h4 style="margin-bottom: 1rem; color: white; text-align: center;">性能要求急剧提升</h4>
                             <div style="font-size: 0.9rem; line-height: 1.6;">
@@ -385,8 +586,9 @@
                                 <p>• <strong>效率提升：</strong>资源利用率需要提升30%以上</p>
                             </div>
                         </div>
-                        
-                        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
+
+                        <div
+                            style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
                             <div style="font-size: 2.5rem; margin-bottom: 1rem; text-align: center;">🔧</div>
                             <h4 style="margin-bottom: 1rem; color: white; text-align: center;">技术复杂度激增</h4>
                             <div style="font-size: 0.9rem; line-height: 1.6;">
@@ -402,11 +604,13 @@
                 <!-- 现有技术局限性 -->
                 <div style="margin-bottom: 4rem;">
                     <h3 style="text-align: center; margin-bottom: 2rem; color: white;">现有技术的关键局限性</h3>
-                    
+
                     <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
-                        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
+                        <div
+                            style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
                             <h4 style="color: #ffeb3b; margin-bottom: 1rem;">❌ 传统调度系统的技术瓶颈</h4>
-                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+                            <div
+                                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
                                 <div>
                                     <p style="font-weight: bold; margin-bottom: 0.5rem;">🔸 静态调度策略</p>
                                     <p style="font-size: 0.9rem; opacity: 0.9;">基于预定义规则，无法适应动态环境变化，调度效率低下</p>
@@ -425,23 +629,29 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
+
+                        <div
+                            style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
                             <h4 style="color: #ffeb3b; margin-bottom: 1rem;">📊 性能对比数据</h4>
-                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
-                                <div style="text-align: center; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                            <div
+                                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                                <div
+                                    style="text-align: center; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 10px;">
                                     <div style="font-size: 1.5rem; font-weight: bold; color: #ff5722;">60%</div>
                                     <div style="font-size: 0.8rem;">传统系统资源浪费率</div>
                                 </div>
-                                <div style="text-align: center; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                                <div
+                                    style="text-align: center; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 10px;">
                                     <div style="font-size: 1.5rem; font-weight: bold; color: #ff5722;">5-10秒</div>
                                     <div style="font-size: 0.8rem;">传统系统故障恢复时间</div>
                                 </div>
-                                <div style="text-align: center; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                                <div
+                                    style="text-align: center; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 10px;">
                                     <div style="font-size: 1.5rem; font-weight: bold; color: #ff5722;">O(n²)</div>
                                     <div style="font-size: 0.8rem;">传统算法时间复杂度</div>
                                 </div>
-                                <div style="text-align: center; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                                <div
+                                    style="text-align: center; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 10px;">
                                     <div style="font-size: 1.5rem; font-weight: bold; color: #ff5722;">95%</div>
                                     <div style="font-size: 0.8rem;">传统系统可用性上限</div>
                                 </div>
@@ -453,9 +663,10 @@
                 <!-- 实际应用痛点 -->
                 <div style="margin-bottom: 4rem;">
                     <h3 style="text-align: center; margin-bottom: 2rem; color: white;">实际应用中的关键痛点</h3>
-                    
+
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
+                        <div
+                            style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
                             <h4 style="color: #4caf50; margin-bottom: 1rem;">🏭 智能制造领域</h4>
                             <div style="font-size: 0.9rem; line-height: 1.6;">
                                 <p><strong>痛点1：</strong>生产线机器人协调效率低，设备利用率仅65%</p>
@@ -464,8 +675,9 @@
                                 <p><strong>痛点4：</strong>设备维护和任务调度缺乏预测性</p>
                             </div>
                         </div>
-                        
-                        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
+
+                        <div
+                            style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
                             <h4 style="color: #2196f3; margin-bottom: 1rem;">☁️ 云计算领域</h4>
                             <div style="font-size: 0.9rem; line-height: 1.6;">
                                 <p><strong>痛点1：</strong>计算资源利用率低，平均仅70%</p>
@@ -474,8 +686,9 @@
                                 <p><strong>痛点4：</strong>故障恢复时间长，影响服务可用性</p>
                             </div>
                         </div>
-                        
-                        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
+
+                        <div
+                            style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
                             <h4 style="color: #ff9800; margin-bottom: 1rem;">🚦 智慧交通领域</h4>
                             <div style="font-size: 0.9rem; line-height: 1.6;">
                                 <p><strong>痛点1：</strong>信号灯协调不智能，交通拥堵严重</p>
@@ -490,35 +703,38 @@
                 <!-- 技术发展的迫切需求 -->
                 <div>
                     <h3 style="text-align: center; margin-bottom: 2rem; color: white;">技术发展的迫切需求</h3>
-                    
-                    <div style="background: rgba(255,255,255,0.1); padding: 3rem; border-radius: 15px; backdrop-filter: blur(10px);">
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+
+                    <div
+                        style="background: rgba(255,255,255,0.1); padding: 3rem; border-radius: 15px; backdrop-filter: blur(10px);">
+                        <div
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
                             <div style="text-align: center;">
                                 <div style="font-size: 3rem; margin-bottom: 1rem;">🎯</div>
                                 <h4 style="margin-bottom: 1rem; color: white;">智能化调度</h4>
                                 <p style="font-size: 0.9rem; opacity: 0.9;">需要具备学习能力的智能调度算法，能够自适应优化调度策略</p>
                             </div>
-                            
+
                             <div style="text-align: center;">
                                 <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
                                 <h4 style="margin-bottom: 1rem; color: white;">实时响应</h4>
                                 <p style="font-size: 0.9rem; opacity: 0.9;">需要毫秒级的调度决策响应时间，满足实时系统要求</p>
                             </div>
-                            
+
                             <div style="text-align: center;">
                                 <div style="font-size: 3rem; margin-bottom: 1rem;">🔄</div>
                                 <h4 style="margin-bottom: 1rem; color: white;">自适应优化</h4>
                                 <p style="font-size: 0.9rem; opacity: 0.9;">需要能够根据环境变化自动调整和优化的系统架构</p>
                             </div>
-                            
+
                             <div style="text-align: center;">
                                 <div style="font-size: 3rem; margin-bottom: 1rem;">🛡️</div>
                                 <h4 style="margin-bottom: 1rem; color: white;">高可靠性</h4>
                                 <p style="font-size: 0.9rem; opacity: 0.9;">需要具备强大故障预测和快速恢复能力的可靠系统</p>
                             </div>
                         </div>
-                        
-                        <div style="margin-top: 2rem; padding: 2rem; background: rgba(255,255,255,0.1); border-radius: 10px; text-align: center;">
+
+                        <div
+                            style="margin-top: 2rem; padding: 2rem; background: rgba(255,255,255,0.1); border-radius: 10px; text-align: center;">
                             <h4 style="color: #ffeb3b; margin-bottom: 1rem;">💡 技术突破的关键价值</h4>
                             <p style="font-size: 1.1rem; line-height: 1.6;">
                                 基于以上痛点和需求，迫切需要一种<strong>革命性的多智能体任务调度解决方案</strong>，
