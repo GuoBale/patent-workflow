@@ -1,0 +1,39 @@
+MIT License
+
+Copyright (c) 2025 Multi-Agent Task Scheduler Patent Project
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+PATENT NOTICE:
+This project contains patent-pending technology. The patent applications cover
+the core algorithms and methods described in this repository, including but not
+limited to:
+
+1. Multi-dimensional load sensing algorithms
+2. Adaptive DAG optimization techniques  
+3. Predictive scheduling algorithms
+4. Hierarchical fault recovery mechanisms
+
+Commercial use of the patented technology may require licensing. Please contact
+the patent holders for licensing information.
+
+For more information about the patent status and licensing, please refer to the
+patent analysis documentation in this repository.
